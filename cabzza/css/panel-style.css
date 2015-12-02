@@ -1,0 +1,178 @@
+
+
+/* fonts */
+
+@font-face {
+    font-family: Lato-light;
+    src: url('../fonts/Lato-Light.ttf');   
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato-Bold.ttf');   
+}
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url('../fonts/Lato-Thin.ttf');   
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato-Regular.ttf');   
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: auto;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*html { overflow-y: scroll; }*/
+body { 
+  font-family:'Lato-Light';
+  font-size: 62.5%;
+  line-height: 1;
+  color: #585858;
+}
+
+/* general styles */
+
+.background {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image: url('../IMG/background.png');
+    background-size: cover;
+}
+
+.nopadding {
+    padding: 0;
+    border: 0;
+}
+
+/*-----------------------------index.html------------------------------*/
+
+/* navbar styles */
+
+.navbar-default {
+    background: rgba(255,255,255,0.3);
+    border-bottom: none;
+    position: auto;
+}
+
+/* navbar title */
+.navbar-default .navbar-brand h5 {
+    color: rgba(119,34,17,0.8);
+    font-family: "Lato-Light";
+    font-size: 25px;
+}
+
+.navbar-default .navbar-brand h5:hover,
+.navbar-default .navbar-brand h5:focus {
+    color: rgba(119,34,17,1);
+}
+
+/* navbar right */
+.navbar-default .navbar-nav > li > a {
+    color: rgba(119,34,17,0.8);
+    font-family: "Lato-Light";
+    font-size: 25px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgba(119,34,17,1);
+}
+
+.navbar-default .navbar-nav .btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  background: rgba(255,255,255,0);
+  border: solid #ffffff 2px;
+}
+
+.navbar-default .navbar-nav .btn:hover {
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+  color: #752111;
+}
+
+@media(max-width:768px) {
+
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 0;
+    }
+}
+
+/* general font styles in stepbox */
+
+textarea,
+.step-box p,
+.step-box .btn {
+    font-size: 150%;
+    font-family:'Lato-Regular';
+    text-align: left;
+    color: rgba(119,34,17,1);
+  }
+
+/* panel styles */
+
+.step-box {
+    background: rgba(255,255,255,0.5);
+    height: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+textarea  {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.step-box p {
+  line-height: 200%;
+}
+
+.step-box .btn {
+  text-align: center;
+  width: 100px;
+  border-radius: 28px;
+  color: #ffffff;
+  background: rgba(0,0,0,0.3);
+  padding: 3px 10px 3px 10px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.step-box .btn:hover {
+  background: rgba(119,34,17,0.8);
+  text-decoration: none;
+  color: white;
+  z-index: 9999;
+}
+
+
+/*-----------------------------------------------------------*/
